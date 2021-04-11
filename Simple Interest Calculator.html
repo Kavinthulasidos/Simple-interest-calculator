@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>
+        Simple Interest Calculator
+    </title>
+    <style>
+        body {
+            background-image: url("https://cdn.hipwallpaper.com/i/48/52/j4vn5k.jpg");
+            background-repeat: no-repeat;
+            background-size: 1370px 657px;
+        }
+    </style>
+</head>
+
+<body font-color:"white">
+    <script>
+        function calculate() {
+            var s, p , t, r;
+            p = document.getElementById("principal").value;
+            t = document.getElementById("time").value;
+            r = document.getElementById("rate").value;
+            s = (p * t * r) / 100;
+            alert("the simple interest for the given data is " +s);
+        }
+    </script>
+    <br><br><br>
+    <fieldset id="f" style="
+    height: 250px;
+    width: 500px;
+    ">  
+        <font color="white">
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>
+                            <h2 align="center">Simple Interest Calculator</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td style="
+    padding-bottom: 20px;
+">Principal amount</td>
+                        <td>
+                            <input id="principal" type="number" name="principal" placeholder="Rs">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="
+    padding-bottom: 20px;
+">Time period</td>
+                        <td>
+                            <input id="time" type="number" name="time" placeholder="Years">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="
+    padding-bottom: 20px;
+">Rate of Interest</td>
+                        <td>
+                            <input id="rate" type="number" name="rate" placeholder="%">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </form>
+        <button onclick='calculate()'>Submit</button>
+        </font>     
+</fieldset>
+
+</body>
+
+</html>
